@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="02.c" />
+    <ClCompile Include="03-extra.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

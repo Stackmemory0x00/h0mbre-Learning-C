@@ -14,9 +14,9 @@ int main(void)
     char c;
     unsigned long long i = 0;
     printf("Enter your first name:");
-    while ((c = getchar()) != '\n' && c != EOF)
+    while ((c = getchar()) != '\n'&& c != EOF)
     {
-         tempFirstname = realloc(firstName, (i + 1) * sizeof(char));
+        tempFirstname = realloc(firstName, (i + 1) * sizeof(char));
         if (tempFirstname == NULL) {
             free(firstName);
             printf("The system was not able to allocate memory. existing ....\n");

@@ -31,7 +31,7 @@ int main(void)
     srand(time(NULL));
     for (int i = 0; i < flips; i++)
     {
-        choice = rand() % 2;
+        choice = rand() % 2 ;
         choice ? tails++ : heads++;
     }
 

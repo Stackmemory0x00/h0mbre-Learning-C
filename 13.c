@@ -14,7 +14,7 @@ int main(void)
     int game[NO_OF_GAMES][NO_OF_PLAYERS] = { 0 };
     double highest_score = 0;
     int highest_player;
-   
+
 
     for (int i = 0; i < NO_OF_GAMES; i++)
     {
@@ -23,17 +23,17 @@ int main(void)
         {
             printf("Enter scoring total for Player #%d:", k++);
             (void)scanf("%d", &game[i][j]);
-       }
+        }
     }
 
-    for (int i = 0; i <  NO_OF_PLAYERS; i++)
+    for (int i = 0; i < NO_OF_PLAYERS; i++)
     {
         int j;
         double current_score = 0;
-        for ( j = 0; j < NO_OF_GAMES; j++)
+        for (j = 0; j < NO_OF_GAMES; j++)
         {
             current_score += game[j][i];
-           
+
         }
         if (current_score > highest_score)
         {

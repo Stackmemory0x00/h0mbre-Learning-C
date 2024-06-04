@@ -127,10 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="16.c" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" />
+    <ClCompile Include="20.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

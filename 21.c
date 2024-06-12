@@ -28,19 +28,19 @@ int main () {
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-struct info
+typedef struct info
 {
     char first_name[50];
     char last_name[50];
     int  ID_number;
     int  last_4_SSN;
     char title[50];
-};
+}typedef_info;
 
 struct real_emp
 {
-    struct info emp1;
-    struct info emp2;
+    typedef_info emp1;
+    typedef_info emp2;
 
 }employee;
 
@@ -48,7 +48,7 @@ struct real_emp
 
 int main(void)
 {
-    struct info* ptrEmployee = &employee.emp1;
+     typedef_info* ptrEmployee = &employee.emp1;
     for (int i = 0; i < 2; i++)
     {
         if (i == 1)
@@ -81,7 +81,6 @@ int main(void)
         printf("ID: %d\n", ptrEmployee->ID_number);
         printf("SSN: %d\n", ptrEmployee->last_4_SSN);
         printf("Title : %s Engineer\n\n", ptrEmployee->title);
-        
     }
     return 0;
 }

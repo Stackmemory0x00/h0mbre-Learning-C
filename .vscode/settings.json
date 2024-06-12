@@ -1,0 +1,9 @@
+{
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiYellow",
+    "workbench.colorCustomizations": {
+        
+        
+        "terminal.foreground": "#e9e9e9",
+        
+    }
+}
